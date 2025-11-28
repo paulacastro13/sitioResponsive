@@ -1,0 +1,20 @@
+.nav-item{
+    color: white; 
+}
+
+#buscar {
+    border-radius: 5px;
+    border-color: white; 
+
+}
+
+.nav-item{
+    padding-top: 5px;
+    margin-top: 1px;
+}
+
+.navbar navbar-expand-lg navbar-dark, 
+.container {
+    background-color: rgb(127, 128, 129);
+}
+
