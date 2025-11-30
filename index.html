@@ -1,102 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio Responsive</title>
 
-    <link href="/bootstrap.min.css" rel="stylesheet">
-    <link href="bootstrap.min.css.map" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio Responsive</title>
+
+  <link href="/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap.min.css.map" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container" id="barraSup">
-      <div class="navbar-brand mb-0 h1">
-        LOREM IPSUM
-      </div>
+
+      <div class="navbar-brand mb-0 h1">LOREM IPSUM</div>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav d-flex flex-row" style="max-width: 50%;">
-            <li class="nav-item me-3"><p class="mb-0 text-white">Dolor</p></li>
-            <li class="nav-item me-3"><p class="mb-0 text-white">Sit</p></li>
-            <li class="nav-item me-3"><p class="mb-0 text-white">Amet</p></li>
-          </ul>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-block d-lg-none w-100 mb-3">
+          <input type="search" placeholder="Search" id="buscar" class="form-control w-100">
+        </form>
 
-          <form class="d-flex ms-auto">
-            <input type="search" placeholder="Search" id="buscar" class="form-control">
-          </form>
+        <ul class="navbar-nav d-flex flex-column flex-lg-row me-lg-auto">
+          <li class="nav-item me-lg-3">
+            <p class="mb-0 text-white">Dolor</p>
+          </li>
+          <li class="nav-item me-lg-3">
+            <p class="mb-0 text-white">Sit</p>
+          </li>
+          <li class="nav-item me-lg-3">
+            <p class="mb-0 text-white">Amet</p>
+          </li>
+        </ul>
+
+        <form class="d-none d-lg-flex ms-lg-auto w-auto">
+          <input type="search" placeholder="Search" id="buscar" class="form-control">
+        </form>
+
+        <div class="d-block d-lg-none mb-3">
+          <div class="dropdown w-100">
+            <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="menuOpciones"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Opciones
+            </button>
+            <ul class="dropdown-menu w-100 p-2" aria-labelledby="menuOpciones">
+              <li class="dropdown-item">Opción 1</li>
+              <li class="dropdown-item">Opción 2</li>
+              <li class="dropdown-item">Opción 3</li>
+              <li class="dropdown-item">Opción 4</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-    </nav>
+  </nav>
 
-<main>
+  <main>
+    <h4>Lorem ipsum...</h4>
 
-<h4>Lorem ipsum...</h4>
+    <div id="carruselTextos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
 
-<div id="carruselTextos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-  <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center align-items-center" style="height: 25px;">
+            <h6>Lorem ipsum dolor sit amet</h6>
+          </div>
+        </div>
 
-    <div class="carousel-item active">
-      <div class="d-flex justify-content-center align-items-center" style="height: 25px;">
-        <h6>Lorem ipsum dolor sit amet</h6>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center" style="height: 25px;">
+            <h6>Aenean id pharetra justo</h6>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center" style="height: 25px;">
+            <h6>Phasellus non molestie nisl</h6>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="carousel-item">
-      <div class="d-flex justify-content-center align-items-center" style="height: 25px;">
-        <h6>Aenean id pharetra justo</h6>
+    <div class="row">
+      <div class="col-lg-4 d-none d-lg-block">
+        <div class="row opciones">Opción 1</div>
+        <div class="row opciones">Opción 2</div>
+        <div class="row opciones">Opción 3</div>
+        <div class="row opciones">Opción 4</div>
       </div>
-    </div>
 
-    <div class="carousel-item">
-      <div class="d-flex justify-content-center align-items-center" style="height: 25px;">
-        <h6>Phasellus non molestie nisl</h6>
+      <div class="col">
+        <div class="row g-2">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id
+            pharetra justo. Phasellus non molestie nisl. Cras neque ipsum, varius vitae tempus et, ornare non odio.</div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">Suspendisse in finibus arcu. Nam sodales lacus enim, a convallis
+            metus commodo non. Nunc euismod diam ante. Nunc feugiat mauris et massa placerat aliquam. </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">Sed ante lorem, luctus vel lacus eget, efficitur ultricies nisi.
+            Vivamus arcu arcu, congue ut ultricies non, varius vitae velit. Vestibulum ante ipsum primis in faucibus
+            orci luctus et ultrices posuere cubilia curae</div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">Sed dolor augue, pharetra eu dui tristique, sagittis mollis
+            mauris. Duis consectetur eros ut posuere tristique. Nunc pharetra, tortor eget volutpat feugiat, enim mauris
+            interdum elit, at posuere odio nisl eu nibh.</div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">Phasellus non ante non nulla porttitor sodales. Sed semper, nisl
+            sit amet viverra fringilla, lectus mauris blandit ex, sit amet consequat sapien metus eu felis. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">Duis nibh odio, mattis et semper aliquam, maximus ac sem.
+            Phasellus egestas arcu a nunc lacinia scelerisque. Suspendisse a ante in arcu sagittis venenatis. </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">Phasellus lacinia accumsan diam. Cras volutpat ornare eleifend.
+            Sed bibendum diam nec justo lacinia vehicula. Etiam at auctor purus, eget viverra felis.</div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">Morbi lorem elit, porta in odio non, sagittis mattis quam.
+            Maecenas nec mauris in odio congue blandit. Aliquam imperdiet nisi quis ipsum lacinia, pretium rhoncus dolor
+            suscipit. </div>
+          <div class="d-none d-lg-block col-lg-4"></div>
+        </div>
       </div>
-    </div>
+  </main>
 
-  </div>
-</div>
-
-
-<div class="row">
-  <div class="col-sm-4">
-    <div class="row opciones">Opción 1</div>
-    <div class="row opciones">Opción 2</div>
-    <div class="row opciones">Opción 3</div>
-    <div class="row opciones">Opción 4</div>
-  </div>
-
-  <div class="col">
-    <div class="row fila">
-      <div class="col colum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id pharetra justo. Phasellus non molestie nisl. Cras neque ipsum, varius vitae tempus et, ornare non odio. </div>
-      <div class="col colum">Suspendisse in finibus arcu. Nam sodales lacus enim, a convallis metus commodo non. Nunc euismod diam ante. Nunc feugiat mauris et massa placerat aliquam. </div>
-      <div class="col colum">Sed ante lorem, luctus vel lacus eget, efficitur ultricies nisi. Vivamus arcu arcu, congue ut ultricies non, varius vitae velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</div>
-    </div>
-
-    <div class="row fila">
-      <div class="col colum">Sed dolor augue, pharetra eu dui tristique, sagittis mollis mauris. Duis consectetur eros ut posuere tristique. Nunc pharetra, tortor eget volutpat feugiat, enim mauris interdum elit, at posuere odio nisl eu nibh.</div>
-      <div class="col colum">Phasellus non ante non nulla porttitor sodales. Sed semper, nisl sit amet viverra fringilla, lectus mauris blandit ex, sit amet consequat sapien metus eu felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
-      <div class="col colum">Duis nibh odio, mattis et semper aliquam, maximus ac sem. Phasellus egestas arcu a nunc lacinia scelerisque. Suspendisse a ante in arcu sagittis venenatis. </div>
-    </div>
-
-    <div class="row fila">
-      <div class="col colum">Phasellus lacinia accumsan diam. Cras volutpat ornare eleifend. Sed bibendum diam nec justo lacinia vehicula. Etiam at auctor purus, eget viverra felis.</div>
-      <div class="col colum">Morbi lorem elit, porta in odio non, sagittis mattis quam. Maecenas nec mauris in odio congue blandit. Aliquam imperdiet nisi quis ipsum lacinia, pretium rhoncus dolor suscipit. </div>
-      <div class="col"></div>
-    </div>
-  </div>
-</div>
-
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
