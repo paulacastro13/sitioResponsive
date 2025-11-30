@@ -5,16 +5,57 @@
 #buscar {
     border-radius: 5px;
     border-color: white; 
-
 }
 
 .nav-item{
-    padding-top: 5px;
+    padding-top: 2px;
     margin-top: 1px;
 }
 
-.navbar navbar-expand-lg navbar-dark, 
-.container {
+.navbar.navbar-expand-lg.navbar-dark {
     background-color: rgb(127, 128, 129);
+    padding-bottom: 2px;
+    margin-bottom: 20px;
 }
 
+h4{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.col-sm-4{
+    margin-left: 50px;
+    align-items: center; 
+}
+
+.row{
+    margin-right: 5px;
+}
+.col.colum{
+    text-align: justify;
+    font-size: small;
+    background-color: rgba(233, 231, 231, 0.37);
+}
+
+.fila{
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.opciones{
+    text-decoration: underline;
+    border: 1px solid rgba(138, 138, 138, 0.468);
+    border-radius: 3px;
+    width: 75%; 
+    padding: 10px;
+    margin-left: 45px;
+}
+
+#carruselTextos{
+    margin-bottom: 20px;
+}
+
+p{
+    text-align: left;
+}
